@@ -1,0 +1,86 @@
+.bg{
+    background: linear-gradient(245deg, #dbb6ee, #b57edc, #7f4ca5);
+    background-position: center center;
+}
+
+.bg2{
+    background: linear-gradient(245deg, #77dd77, #8ae287, #aeeca8);
+    background-position: center center;
+}
+
+#flip-label{
+  color: #7331a6;
+  cursor: pointer;
+}
+#flip-label:hover{
+  text-decoration: underline;
+}
+
+/* div .login-form {
+    display: none;
+}
+
+:checked ~ div .login-form {
+    display: block;
+}
+
+.singin-form {
+    display: block;
+} */
+
+/* #imglog{
+    display: block;   
+}
+:checked ~ #imglog{
+    display: none;
+}
+
+#imgsig{
+    display: none;
+}
+:checked ~ #imgsig{
+    display: block;
+} */
+
+
+#imglog{
+    display: block;
+}
+:checked ~ #imglog{
+    display: none;
+}
+
+#imgsig{
+    display: none;
+}
+:checked ~ #imgsig{
+    display: block;
+}
+
+#login-in{
+    display: block;
+}
+:checked ~ #login-in{
+    display: none;
+}
+
+#singin-in{
+    display: none;
+}
+:checked ~ #singin-in{
+    display: block;
+}
+
+input.oculto[type=checkbox] {
+    position: absolute;
+    left: -999em;
+}
+  
+
+@media (max-width: 1200px) {
+    .imagenes{
+        position: absolute;
+        left: -999em;
+    }
+   
+  }

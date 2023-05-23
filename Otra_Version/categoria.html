@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- ===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <!-- ccs boosttrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- AOS library   -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>EMA Learning</title>
+</head>
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+
+<body>
+  <!-- RECURSOS -->
+  <!-- librerias basicas de java script para bootsrap -->
+  <script src="js/popper.min.js"></script>
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!----------------------- NAVBAR  fixed-top  navbar-toggler-->
+  <header>
+    <nav class="navbar navbar-expand-md bg-white
+                navbar-text p-0 opacity-75 fixed-top d-flex">
+      <div class="container-fluid ">
+        <!-- HAMBURGUESA MENU -->
+        <button class="navbar-toggler border-0 fs-1 col-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toogle navigation">
+          <i class="bx bx-menu sidebarOpen text-body fw-bold border-0 "></i>
+        </button>
+        <!-- LOGO -->
+        <div class="col text-center">
+          <div class="navbar-nav">
+            <span class="navbar-brand fw-semibold fs-3 pe-2 ps-2">
+              <a class="nav-link" href="#">
+                <i class="fas fa-brain fs-2"></i> EMA
+                Learning</a>
+            </span>
+          </div>
+        </div>
+
+        <!--////////// CAJA DE BUSQUEDA 1//////////////-->
+        <div class="darkLight-searchBox col-1">
+
+          <div class="searchBox me-auto ">
+            <div class="searchToggle col">
+              <i class='bx bx-x cancel fw-semibold'></i>
+              <i class='bx bx-search search fw-semibold'></i>
+            </div>
+
+            <div class="search-field">
+              <input type="text" placeholder="Buscar...">
+              <i class="bx bx-search text-secondary"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPCIONES -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="col text-center fs-5">
+            <ul class="navbar-nav">
+              <li class="nav-item col me-auto"><a class="nav-link active" href="">Inicio</a></li>
+              <li class="nav-item col-auto me-auto"><a class="nav-link" href="">Acerca de</a></li>
+              <li class="nav-item dropdown col me-auto">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Cuenta
+                </a>
+                <ul class="dropdown-menu text-center opacity-75">
+                  <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                  <li><a class="dropdown-item" href="#">Registrar</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Mi Cuenta</a></li>
+                </ul>
+              </li>
+              <li class="nav-item col me-auto"><a class="nav-link" href="">Cursos</a></li>
+              <li class="nav-item col me-auto"><a class="nav-link" href="">Contacto</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script src="js/script.js"></script>
+  </header>
+
+
+  <div class="col bg-white p-4 ">
+    <br> 
+  </div>
+
+
+
+  <main>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Cursos</h1>
+          <p class="lead text-muted">Aqui encontraras todo tipo de cursos para tu desarrollo
+            personal, mejoraras tus cualdidades, aprenderas cosas nuevas... <br>
+            <span class="fw-bold">¡Tu capacidad de conocimientos no tiene limites!</span>
+          </p>
+          <p>
+            <a href="#" class="btn btn-secondary my-2">Ver por categorias</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+
+        <div class="col">
+          <!-- tenemos 3 tarjetas -->
+          <div class="col mt-4">
+            <div data-aos="fade-up" class="card shadow-sm">
+              <div class="row">
+                <div class="col-auto">
+                  <svg class="bd-placeholder-img card-img" width="200" height="auto" xmlns="http://www.w3.org/2000/svg"
+                    role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                    focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#289672" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Thumbnail 2</text>
+                  </svg>
+                </div>
+                <div class="col">
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col mt-4">
+            <div data-aos="fade-up" class="card shadow-sm">
+              <div class="row">
+                <div class="col-auto">
+                  <svg class="bd-placeholder-img card-img" width="200" height="auto" xmlns="http://www.w3.org/2000/svg"
+                    role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                    focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#289672" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Thumbnail 2</text>
+                  </svg>
+                </div>
+                <div class="col">
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col mt-4">
+            <div data-aos="fade-up" class="card shadow-sm">
+              <div class="row">
+                <div class="col-auto">
+                  <svg class="bd-placeholder-img card-img" width="200" height="auto" xmlns="http://www.w3.org/2000/svg"
+                    role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                    focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#289672" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Thumbnail 2</text>
+                  </svg>
+                </div>
+                <div class="col">
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- tenemos 3 tarjetas -->
+
+
+          <!-- tenemos 3 tarjetas -->
+
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <!------------------------------------------------ FOOTER -->
+  <footer class="bg-secondary bg-gradient text-white pt-5 pb-4">
+    <div class="container fw-light">
+      <div class="row">
+        <div id="acerca-de" class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="mb-4 text-dark">Acerca de...</h6>
+          <p>Nostros somos unos estudiantes que queremos...
+            footer content. Lorem ipsum dolor sit amet,
+            ital consectetur lorem ipsum dolor sit amet
+            adipisicing elit.</p>
+        </div>
+
+        <div class="col mx-auto mt-3 ps-4">
+          <h6 class="mb-4  text-dark">Products</h6>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> TheProviders</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> Creativity</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> SourceFiles</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> bootstrap 5 alpha</a></p>
+
+        </div>
+
+        <div class="col mx-auto mt-3">
+          <h6 class=" mb-4  text-dark">Useful links</h6>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> Your Account</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> Become an Affiliates</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Shipping Rates</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> Help</a></p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class=" mb-4 text-dark">Contacto</h6>
+          <p> <i class="fas fa-home mr-3"></i> Soledad de Graciano Sanchez, S.L.P. 78430, México </p>
+          <p> <i class="fas fa-envelope mr-3"></i> emalearning@outlook.mx </p>
+          <p> <i class="fas fa-phone mr-3"></i> +52 444-504-3113 </p>
+          <p> <i class="fas fa-print mr-3"></i> +52 444-444-4444 </p>
+        </div>
+      </div>
+
+      <hr class="mb-4">
+
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8 d-flex">
+          <p> Copyright ©2022 Todos los derechos reservados:
+            <a href="#" style="text-decoration: none;">
+              <strong class="text-dark ps-1">
+                <h6>TecNM en ITSLP</h6>
+              </strong>
+            </a>
+          </p>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+          <div class="text-md-right">
+            <div class="top">
+              <div class="media-icons justify-content-center">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    //AOS.init();// inicialización básica
+    AOS.init({
+      easing: 'ease-out-back',
+      duration: 1500
+    });
+  </script>
+
+</body>
+
+</html>

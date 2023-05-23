@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- ===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <!-- ccs boosttrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- AOS library   -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>EMA Learning</title>
+</head>
+<style>
+  .container-skill {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+  }
+
+  .container-skill .skill-box {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .skill-box .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #4070f4;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+  }
+
+  .skill-per.css {
+    width: 70%;
+    animation-delay: 0.1s;
+  }
+
+  .skill-per.javascript {
+    width: 50%;
+    animation-delay: 0.2s;
+  }
+
+  .skill-per.nodejs {
+    width: 30%;
+    animation-delay: 0.3s;
+  }
+
+  @keyframes progress {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #4070f4;
+    z-index: 1;
+  }
+
+  .tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #4070f4;
+    transform: translateX(-50%) rotate(45deg);
+
+  }
+
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+
+<body>
+  <!-- RECURSOS -->
+  <!-- librerias basicas de java script para bootsrap -->
+  <script src="js/popper.min.js"></script>
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <!----------------------- NAVBAR  fixed-top  navbar-toggler-->
+  <header class="col">
+    <nav class="navbar navbar-expand-md bg-white
+                navbar-text p-0 opacity-75 fixed-top d-flex">
+      <div class="container-fluid ">
+        <!-- HAMBURGUESA MENU -->
+        <button class="navbar-toggler border-0 fs-1 col-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toogle navigation">
+          <i class="bx bx-menu sidebarOpen text-body fw-bold border-0 "></i>
+        </button>
+        <!-- LOGO -->
+        <div class="col text-center">
+          <div class="navbar-nav">
+            <span class="navbar-brand fw-semibold fs-3 pe-2 ps-2">
+              <a class="nav-link" href="#">
+                <i class="fas fa-brain fs-2"></i> EMA
+                Learning</a>
+            </span>
+          </div>
+        </div>
+
+        <!--////////// CAJA DE BUSQUEDA 1//////////////-->
+        <div class="darkLight-searchBox col-1">
+
+          <div class="searchBox me-auto ">
+            <div class="searchToggle col">
+              <i class='bx bx-x cancel fw-semibold'></i>
+              <i class='bx bx-search search fw-semibold'></i>
+            </div>
+
+            <div class="search-field">
+              <input type="text" placeholder="Buscar...">
+              <i class="bx bx-search text-secondary"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPCIONES -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="col text-center fs-5">
+            <ul class="navbar-nav">
+              <li class="nav-item col me-auto"><a class="nav-link active" href="">Inicio</a></li>
+              <li class="nav-item col-auto me-auto"><a class="nav-link" href="">Acerca de</a></li>
+              <li class="nav-item dropdown col me-auto">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Cuenta
+                </a>
+                <ul class="dropdown-menu text-center opacity-75">
+                  <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                  <li><a class="dropdown-item" href="#">Registrar</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Mi Cuenta</a></li>
+                </ul>
+              </li>
+              <li class="nav-item col me-auto"><a class="nav-link" href="">Cursos</a></li>
+              <li class="nav-item col me-auto"><a class="nav-link" href="">Contacto</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script src="js/script.js"></script>
+  </header>
+
+
+
+  <div class="col bg-white p-4 ">
+    space
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Avance del curso</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- avances -->
+          <div class="show-skill-bar">
+            <div class="container-skill">
+              <div class="skill-box">
+                <span class="title">HTML</span>
+
+                <div class="skill-bar">
+                  <span class="skill-per html">
+                    <span class="tooltip">90%</span>
+                  </span>
+                </div>
+              </div>
+
+              <div class="skill-box">
+                <span class="title">CSS</span>
+
+                <div class="skill-bar">
+                  <span class="skill-per css">
+                    <span class="tooltip">70%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">JavaScript</span>
+
+                <div class="skill-bar">
+                  <span class="skill-per javascript">
+                    <span class="tooltip">50%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">NodeJS</span>
+
+                <div class="skill-bar">
+                  <span class="skill-per nodejs">
+                    <span class="tooltip">30%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="bg-info bg-gradient">
+    <section class="py-4 text-center container">
+      <div class="row py-lg-54">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Mis cursos</h1>
+        </div>
+      </div>
+    </section>
+    <div class="album py-4 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <!-- tenemos 3 tarjetas -->
+          <div class="col">
+            <div data-aos="zoom-in-left" class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="80" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#007580" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Thumbnail 7</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Avance</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div data-aos="zoom-in-up" class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="80" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#282846" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Thumbnail 8</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div data-aos="flip-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+              data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center"
+              class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="80" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#fed049" /><text x="50%" y="50%" fill="#f181818"
+                  dy=".3em">Thumbnail 9</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <!------------------------------------------------ FOOTER -->
+  <footer class="bg-secondary bg-gradient text-white pt-5 pb-4">
+    <div class="container fw-light">
+      <div class="row">
+        <div id="acerca-de" class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="mb-4 text-dark">Acerca de...</h6>
+          <p>Nostros somos unos estudiantes que queremos...
+            footer content. Lorem ipsum dolor sit amet,
+            ital consectetur lorem ipsum dolor sit amet
+            adipisicing elit.</p>
+        </div>
+
+        <div class="col mx-auto mt-3 ps-4">
+          <h6 class="mb-4  text-dark">Products</h6>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> TheProviders</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> Creativity</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> SourceFiles</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> bootstrap 5 alpha</a></p>
+
+        </div>
+
+        <div class="col mx-auto mt-3">
+          <h6 class=" mb-4  text-dark">Useful links</h6>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> Your Account</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> Become an Affiliates</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Shipping Rates</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;"> Help</a></p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class=" mb-4 text-dark">Contacto</h6>
+          <p> <i class="fas fa-home mr-3"></i> Soledad de Graciano Sanchez, S.L.P. 78430, México </p>
+          <p> <i class="fas fa-envelope mr-3"></i> emalearning@outlook.mx </p>
+          <p> <i class="fas fa-phone mr-3"></i> +52 444-504-3113 </p>
+          <p> <i class="fas fa-print mr-3"></i> +52 444-444-4444 </p>
+        </div>
+      </div>
+
+      <hr class="mb-4">
+
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8 d-flex">
+          <p> Copyright ©2022 Todos los derechos reservados:
+            <a href="#" style="text-decoration: none;">
+              <strong class="text-dark ps-1">
+                <h6>TecNM en ITSLP</h6>
+              </strong>
+            </a>
+          </p>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+          <div class="text-md-right">
+            <div class="top">
+              <div class="media-icons justify-content-center">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    //AOS.init();// inicialización básica
+    AOS.init({
+      easing: 'ease-out-back',
+      duration: 1500
+    });
+  </script>
+
+</body>
+
+</html>

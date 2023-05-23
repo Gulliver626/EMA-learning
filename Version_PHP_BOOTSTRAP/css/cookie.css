@@ -1,0 +1,62 @@
+
+.wrapper{
+  opacity: .9;
+  bottom: 30px;
+  left: 30px;
+  max-width: 365px;
+  background: rgb(255, 255, 255);
+  padding: 25px 25px 30px 25px;
+  border-radius: 15px;
+  box-shadow: 2px 7px 14px -4px rgba(0,0,0,0.15);
+  text-align: center;
+}
+.wrapper.hide{
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+::selection{
+  color: #fff;
+  background: #6199ce;
+}
+.wrapper img{
+  max-width: 90px;
+}
+.h-content header{
+  font-size: 25px;
+  font-weight: 600;
+}
+.h-content{
+  margin-top: 10px;
+}
+.h-content p{
+  color: #0c0c0c;
+  margin: 5px 0 20px 0;
+}
+.h-content .cbuttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cbuttons button{
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: #6199ce;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cbuttons button:hover{
+  transform: scale(0.97);
+}
+.cbuttons .citem{
+  margin: 0 10px;
+}
+.cbuttons a{
+  color: #6199ce;
+}

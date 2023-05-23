@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ccs boosttrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!-- Swiper CSS -->
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>EMA Learning</title>
+</head>
+
+<style>
+    .feature-icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: .75rem;
+    }
+
+    .icon-link>.bi {
+        margin-top: .125rem;
+        margin-left: .125rem;
+        fill: currentcolor;
+        transition: transform .25s ease-in-out;
+    }
+
+    .icon-link:hover>.bi {
+        transform: translate(.25rem);
+    }
+
+    .icon-square {
+        width: 3rem;
+        height: 3rem;
+        border-radius: .75rem;
+    }
+
+    .text-shadow-1 {
+        text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25);
+    }
+
+    .text-shadow-2 {
+        text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25);
+    }
+
+    .text-shadow-3 {
+        text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
+    }
+
+    .card-cover {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .feature-icon-small {
+        width: 3rem;
+        height: 3rem;
+    }
+
+
+    .logotipo {
+        font-size: 72px;
+    }
+
+    @media (min-width: 992px) {
+        .rounded-lg-3 {
+            border-radius: .3rem;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+</style>
+
+<body>
+    <!-- RECURSOS -->
+    <!-- librerias basicas de java script para bootsrap -->
+    <script src="js/popper.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!----------------------- NAVBAR  fixed-top  navbar-toggler-->
+    <?php
+    require "header.php";
+    ?>
+
+
+    <div class="col bg-white text-white p-3 ">
+        space
+    </div>
+
+
+
+    <main>
+        <h1 class="visually-hidden">Heroes examples</h1>
+
+        <div class="px-4 py-4 my-4 text-center ">
+            <i class="logotipo fas fa-brain"></i>
+            <!-- <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+            <h1 class="display-5 fw-bold">Quienes somos?</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                    world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive
+                    grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a href="#ubicacion" class="btn btn-primary btn-lg px-4 gap-3">Ubicación</a>
+                    <a href="#contacto" class="btn btn-outline-secondary btn-lg px-4">Contacto</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-example-divider"></div>
+
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="img/acerca _de/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid"
+                        alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Qué hacemos?</h1>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-example-divider"></div>
+
+        <div class="bg-dark text-secondary  ">
+            <div class="container px-4 py-5">
+                <h2 class="pb-2 border-bottom">Lo que ofrecemos</h2>
+
+                <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-1">
+                    <div class="d-flex flex-column align-items-start gap-2">
+                        <h3 class="fw-bold"> Encuentra cursos increibles
+                        </h3>
+                        <p class="text-muted">La educación basica es importante, por eso aqui encontraras todo lo necesario
+                            para ganar una gran experiencia.</p>
+                        <a href="#" class="btn btn-primary btn-lg">Primary button</a>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+                        <div class="d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#home" />
+                                </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0">Desde casa</h4>
+                            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.
+                            </p>
+                        </div>
+
+                        <div class="d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#table" />
+                                </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0">Gran variedad</h4>
+                            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.
+                            </p>
+                        </div>
+
+                        <div class="d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#people-circle" />
+                                </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0">Mejora</h4>
+                            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.
+                            </p>
+                        </div>
+
+                        <div class="d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#calendar3" />
+                                </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0">Tu tiempo</h4>
+                            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-example-divider"></div>
+
+        <div id="contacto" class="bg-gradientg bg-white bg-opacity-25 border-bottom ">
+            <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+                <div class="bg row align-items-center g-lg-5 py-5">
+
+
+                    <div class="col-md-10 mx-auto col-lg-5">
+                        <form class="p-4 p-md-5 border rounded-3 bg-light">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Message</label>
+                                <textarea type="password" class="form-control" id="exampleInputPassword1"></textarea>
+                            </div>
+                            <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+                            <hr class="my-4">
+                            <small class="text-muted">By clicking Submit, you agree to the terms of use.</small>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-7 text-center align-items-center text-lg-start">
+                        <h1 class="col display-4 fw-bold py-4 mb-3 text-end">Contactanos</h1>
+                        <p class="fs-4 text-end"> <i class="fas fa-envelope mr-3"></i> emalearning@outlook.mx </p>
+                        <p class="fs-4 text-end"> <i class="fas fa-phone mr-3"></i> +52 444-504-3113 </p>
+                        <p class="fs-4 text-end"> <i class="fas fa-print mr-3"></i> +52 444-444-4444 </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+          <div id="ubicacion"></div>     
+        <!-- <div class="b-example-divider"></div> -->
+
+        <div class="bg-white px-4 py-4 my-5  text-center border-bottom">
+            <h2 class="display-4 fw-bold">Ubicación</h2>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead"> <i class="fas fa-map-marker-alt"></i> Soledad de Graciano Sanchez, S.L.P. 78430, México</p>
+            </div>
+            <div class="overflow-hidden">
+                <div class="container px-5">
+                    <iframe class="my-4 rounded border-dark border-3"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d473001.40492913785!2d-101.46530285!3d22.1517556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa22a4dab0a7b%3A0x1ecd42feb6e0a935!2sInstituto%20Tecnol%C3%B3gico%20de%20San%20Luis%20Potos%C3%AD!5e0!3m2!1ses-419!2smx!4v1669179138263!5m2!1ses-419!2smx"
+                        width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+        <symbol id="home" viewBox="0 0 16 16">
+            <path
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+        </symbol>
+
+        <symbol id="table" viewBox="0 0 16 16">
+            <path
+                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+        </symbol>
+
+        <symbol id="calendar3" viewBox="0 0 16 16">
+            <path
+                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+            <path
+                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+        </symbol>
+
+    </svg>
+
+
+    <!------------------------------------------------ FOOTER -->
+    <?php
+    require "footer.php";
+    ?>
+
+</body>
+
+</html>

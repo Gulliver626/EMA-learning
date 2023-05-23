@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- === Basadi en un programa hecho por CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="contacto.css">
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!--<title>Responsive Navigation Menu Bar</title>-->
+</head>
+
+<body>
+    <!--////////////////////// MENU ////////////////////-->
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+
+            <span class="navLogo">
+                <i class="fas fa-brain"></i>
+                </i><a href="#">EMA Learning</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo">
+
+                        <a href="#">EMA Learning</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="principal.html">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Sesión</a></li>
+                </ul>
+            </div>
+            <!--////////// CAJA DE BUSQUEDA //////////////-->
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--/////////////////// CAJA DE BUSQUEDA JS/////////////////-->
+    <script>
+
+        const body = document.querySelector("body"),
+            nav = document.querySelector("nav"),
+            modeToggle = document.querySelector(".dark-light"),
+            searchToggle = document.querySelector(".searchToggle"),
+            sidebarOpen = document.querySelector(".sidebarOpen"),
+            siderbarClose = document.querySelector(".siderbarClose");
+
+        let getMode = localStorage.getItem("mode");
+        if (getMode && getMode === "dark-mode") {
+            body.classList.add("dark");
+        }
+
+        // js code to toggle dark and light mode
+        modeToggle.addEventListener("click", () => {
+            modeToggle.classList.toggle("active");
+            body.classList.toggle("dark");
+
+            // js code to keep user selected mode even page refresh or file reopen
+            if (!body.classList.contains("dark")) {
+                localStorage.setItem("mode", "light-mode");
+            } else {
+                localStorage.setItem("mode", "dark-mode");
+            }
+        });
+
+        // js code to toggle search box
+        searchToggle.addEventListener("click", () => {
+            searchToggle.classList.toggle("active");
+        });
+
+
+        //   js code to toggle sidebar
+        sidebarOpen.addEventListener("click", () => {
+            nav.classList.add("active");
+        });
+
+        body.addEventListener("click", e => {
+            let clickedElm = e.target;
+
+            if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+                nav.classList.remove("active");
+            }
+        });
+
+    </script>
+
+    <!--//////////////// BIENVENIDA ////////////////////-->
+    <div class="font"></div>
+    
+    <!--//////////////// CONTENIDO  ////////////////////-->
+  <div class="background">
+    <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">Surkhet, NP12</div>
+              <div class="text-two">Birendranagar 06</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+0098 9893 5647</div>
+              <div class="text-two">+0096 3434 5678</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">codinglab@gmail.com</div>
+              <div class="text-two">info.codinglab@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Enter your message"></textarea>
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now" >
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+  </div>
+    
+    
+
+    <!--//////////////// FOOTER ////////////////////-->
+
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <!-- <i class="fab fa-slack"></i> -->
+                    <i class="fas fa-brain"></i>
+                    <span class="logo_name">EMA Learning</span>
+                </div>
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Información</li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Colaborar</a></li>
+                </ul>
+                <!-- <ul class="box">
+                    <li class="link_name">Services</li>
+                    <li><a href="#">App design</a></li>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Logo design</a></li>
+                    <li><a href="#">Banner design</a></li>
+                </ul> -->
+                <ul class="box">
+                    <li class="link_name">Cuenta</li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Mi cuenta</a></li>
+                    <li><a href="#">Preferencias</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Cusos</li>
+                    <li><a href="#">Lenguaje de señas</a></li>
+                    <li><a href="#">Desarrollo humano</a></li>
+                    <li><a href="#">Fianzas</a></li>
+                    <li><a href="#">Idiomass</a></li>
+                </ul>
+                <ul class="box input-box">
+                    <li class="link_name">Suscribirse</li>
+                    <li><input type="text" placeholder="ejemplo@ejemplo.com"></li>
+                    <li><input type="button" value="Suscribirse"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright &#169; 2021 <a href="#">TecNM ITSLP.</a>Todos los derechos
+                    reservados</span>
+                <span class="policy_terms">
+                    <a href="#">Politicas de privacidad</a>
+                    <a href="#">Terminos y condiciones</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
